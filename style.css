@@ -1,0 +1,86 @@
+/* *{
+    background-color: brown;
+} */
+.Table{
+display: flex;
+text-align: center;
+justify-content: center;
+margin: 40px;
+color:black;
+}
+.content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 30px;
+    
+}
+.content1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMcCFG0T8IYh3cT4CwEOOXU-uIDS8v8EPEET-l2TzhlQ&s);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .form{
+    width: 90%;
+    max-width: 600px;
+ }
+ .input-group{
+    margin-bottom: 30px;
+    position: relative;
+ }
+ input,textarea{
+    width: 150%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid black;
+    color: black;
+    background: transparent;
+    font-size: 15px;
+ }
+ label{
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color:black;
+    cursor: text;
+    transition: 0.2s;
+
+ }
+ button{
+    padding: 10px 0;
+    color: black;
+    outline: non;
+    background: transparent;
+    border: 1px solid black;
+    width: 150%;
+    cursor: pointer;
+    font-size: 15px;
+ }
+ input:focus~label, /* this section is for when we enter into the any box then input eg your name goes up of the box and valid is for when we write something than th name button remains on top*/
+ input:valid~label
+ {
+    top: -35px;
+    font-size: 14px;
+
+ }
+
+ textarea:focus~label,
+ textarea:valid~label
+ {
+    top: -35px;
+    font-size: 14px;}
